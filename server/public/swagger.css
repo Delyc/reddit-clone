@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend';
+    box-sizing: border-box;
+}
+
+.swagger-ui a {
+    font-family: 'Lexend';
+}
+
+.swagger-ui .topbar {
+    display: none;
+}
+
+.swagger-ui span, .swagger-ui a, .swagger-ui small, .swagger-ui h2, select, button, .opblock-summary-description, pre, p, td, th, h5, h1 {
+    font-family: 'Lexend' !important;
+}

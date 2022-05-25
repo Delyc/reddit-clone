@@ -1,0 +1,383 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.sidebar{
+  height: 100%;
+  width: 20vw;
+  background-color: #61dafb;
+}
+.home{
+  display: flex;
+  
+  position: relative;
+  top: 10rem;
+ 
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  
+  width: 80%;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.col-md-9{
+  width: 60%;
+  
+}
+.col-md-3{
+  display: flex;
+  outline: thin solid red;
+  position: relative;
+  margin-top: 0 !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: #282c3410;
+  padding: 0;
+ 
+}
+.sub{
+  border: 1px solid rgba(128, 128, 128, 0.171);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+ 
+  align-items: center;
+  padding-left: 1rem;
+  color: #141e30;
+  font-size: 1.2rem;
+}
+
+.col-md-3 h3{
+  color: orangered;
+  font-size: 1.3rem;
+}
+
+.posttitle{
+  text-decoration: none;
+  color: orangered;
+  font-size: 1.2rem;
+}
+.post{
+  background-color: #282c3410;
+  border: 1px solid rgba(255, 68, 0, 0.26);
+  border-radius: 5px;
+  word-break: break-all;
+  padding-right: 1rem;
+
+
+}
+.spost{
+  
+  border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+ 
+ 
+}
+
+.btn{
+  background-color: red;
+}
+.button-group{
+  margin-bottom: 1rem;
+}
+.post{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+.button-group button{
+  border: 0;
+  border-radius: 3px;
+}
+
+
+/* ================ readmore ============ */
+.more{
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+  position: relative;
+  top: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.post-more h1{
+  color: orangered;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+.post-more p{
+  color: #141e30;
+  
+}
+
+.post-more{
+  
+  width: 70%;
+}
+.comment{
+  background-color: orangered;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  height: 5vh;
+}
+.form-control{
+  border: 1px solid rgba(255, 68, 0, 0.425);
+  margin-top: 1rem;
+}
+.comuser span{
+  color: orangered;
+}
+
+
+/* ====================login==================== */
+.title {
+  color: orangered;
+  text-align: center;
+  font-size: 2rem;
+}
+.login-req{
+  color: orangered !important;
+  font-weight: bolder;
+}
+.login- {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 4rem;
+}
+.login- form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 0.5rem;
+}
+
+.login- p {
+  color:#141e30;
+}
+.login- span {
+  color: orangered;
+  font-weight: bolder;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"], input[type="file"] {
+  background-color: white !important;
+  border: 0;
+  height: 6vh;
+  color: #141e30;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid orangered;
+}
+input:focus {
+  outline: none;
+}
+
+.user-auth {
+  background-color: orangered;
+  height: 6vh;
+  color: white;
+  font-family: bolder;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
+}
+
+.login-{
+  position: relative;
+  top: 10rem;
+}
+
+/*============== subreddit ================*/
+.subreddit{
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.subreddit form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 25%;
+}
+
+.subreddit form input{
+  border: 1px solid orangered ;
+  border-radius: 3px;
+  height: 6vh;
+  text-align: center;
+}
+.subreddit form textarea{
+  border: 1px solid orangered ;
+  border-radius: 3px;
+  text-align: center;
+}
+.submit-sub{
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+}
+.subreddit h4{
+  color: orangered;
+  font-weight: bold;
+}
+
+
+/* ================add post===================== */
+.form-post{
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-post form{
+  width: 25%;
+}
+.btn-add-post{
+  background-color: orangered;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  height: 6vh;
+}
+.add-sub-home{
+  background-color: orangered;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  height: 6vh;
+  margin-top: 1rem;
+}
+.add-sub-home-text{
+  text-decoration: none;
+  color: white;
+}
+
+.spost{
+ 
+}
+.post-img{
+
+  width: 100%;
+  height: 50vh;
+}
+.post-com{
+  position: relative;
+  top: 5rem;
+}
+.post-com h4{
+  color: orangered;
+}
+.img-fl{
+  border: 1px solid rgba(255, 68, 0, 0.295);
+  border-radius: 3px;
+  width: 25vw;
+  margin-top: 1rem;
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .post{
+    width: 100%;
+  }
+  .img-fl{
+    width: 80vw;
+  }
+  .col-md-9{
+    width: 100%;
+  }
+  .spost{
+    width: 100%;
+  }
+  .row{
+    width: 100%;
+    justify-content: center;
+  }
+  .col-md-3{
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+   /*==========sign up*===================*/
+   .login- form {
+    width: 80%;
+  }
+  .post-com{
+    width: 80%;
+    word-break: break-all;
+  }
+  .form-post form{
+    width: 80%;
+  }
+  .subreddit form{
+    width: 80%;
+  }
+  .more{
+    width: 100%;
+    word-break: break-all;
+  }
+
+}
